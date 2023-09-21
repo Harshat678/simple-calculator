@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcluator </title>
+    <style src="style.css"></style>
+</head>
+<body>
+    <header>calcluator</header>
+    <main>
+        <div class="container">
+            <div class="textbox">
+               <p>-----------------</p>
+               <span id="test"></span>
+               <p>-----------------</p>
+            </div>
+            <div class="buttons">
+                <div class="row1">
+                    <button id="btn7" onclick="press(7)">7</button>
+                    <button id="btn8" onclick="press(8)">8</button>
+                    <button id="btn9" onclick="press(9)">9</button>
+                    <button id="btn_add" onclick="op_press('+')">+</button></div>
+                <div class="row2">
+                    <button id="btn4" onclick="press(4)">4</button>
+                    <button id="btn5" onclick="press(5)">5</button>
+                    <button id="btn6" onclick="press(6)">6</button>
+                    <button id="btn_sub" onclick="op_press('-')">-</button>
+                </div>
+                <div class="row3">
+                    <button id="btn1" onclick="press(1)">1</button>
+                    <button id="btn2" onclick="press(2)">2</button>
+                    <button id="btn3" onclick="press(3)">3</button>
+                    <button id="btn_mul" onclick="op_press('*')">*</button>
+                </div>
+                <div class="row4">
+                    <button id="btn_point" onclick="press('.')">.</button>
+                    <button id="btn0" onclick="press(0)">0</button>
+                    <button id="btn_equal" onclick="equals('=')">=</button>
+                    <button id="btn_divide" onclick="op_press('/')">/</button>
+                </div>
+                <div class="row5">
+                    <button id="clear" onclick="allClear()">clear</button>
+                </div>
+            </div>
+        </div>
+        <script src="calcu.js"></script>
+    </main>
+</body>
+</html>
